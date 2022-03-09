@@ -9,3 +9,34 @@
         <p>97 Bowling Alley Lane, Boulder CO </p>
     </head>
 </head>
+
+<h1><%= "I love" + " Ruby!"%></h1>
+<%= "I love" + " Ruby!"%> <-- that is raw ruby plain code < % = "I Love" + " Ruby" % > 
+<br>
+<%= 1 + 1 %>
+
+<% if 1 == 2 %>
+    <p>1 equals 2.</p>
+<%else %>
+    <p>1 does not equal 2.</p>
+<%end%>
+
+<%# <% if logged_in? %>
+    <%# <a href="/logout">Click here to Log out</a> %>
+<%# <% else %> 
+    <%# <a href="/login">Click here to Log In</a> %>
+<%# <% end %> 
+
+<ul>
+    <% square = [1, 4, 9, 16]%>
+    <% square.each do |square| %>
+        <li><%=square%></li>
+    <%end%>
+</ul>
+
+<% wall_post =  ["First post!", "Second post!", "Hello, it's your mother. Why don't you ever call me?"] %>
+<ul>
+    <% wall_post.each do |post| %>
+        <li><%= post %>
+    <% end %>
+</ul>
